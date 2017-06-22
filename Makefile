@@ -11,4 +11,4 @@ image:
 		-t ${IMAGE}
 
 shell:
-	${DOCKER} run --rm -it ${IMAGE} /bin/bash
+	${DOCKER} run --rm -it -v "${PWD}:/src" -w /src ${IMAGE} /bin/bash
