@@ -4,7 +4,7 @@ DOCKER=docker
 IMAGE="vidbina/ror:alpha"
 
 reown:
-	${SUDO} ${CHOWN} ${USER} -R .
+	${SUDO} ${CHOWN} ${USER}: -R .
 
 image:
 	${DOCKER} build . \
