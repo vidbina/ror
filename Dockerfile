@@ -12,4 +12,4 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
 WORKDIR /src
 ADD Gemfile /src/Gemfile
 ADD Gemfile.lock /src/Gemfile.lock
-RUN bundle install
+RUN bundle && gem install foreman
